@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #e21f25;
+}
+
+.header .logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.header nav {
+  line-height: 50px;
+}
+
+.header nav a {
+  text-decoration: none;
+  margin-right: 30px;
+  color: white;
+  padding: 8px;
+  text-transform: uppercase;
+}
+
+.header nav a:hover {
+  background-color: white;
+  color: #e21f25;
+}
+
+.header-text {
+  margin-top: 3rem;
+  text-align: center;
+  line-height: 0;
+}
+.slogan {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 6rem;
+}
+
+.package {
+  font-size: 3rem;
+  padding-top: 2rem;
+  color: #e21f25;
+}
