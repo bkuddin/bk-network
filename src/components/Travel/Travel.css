@@ -1,0 +1,10 @@
+.travel-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.hotel-container {
+  border-right: 1px solid lightgray;
+  margin-right: 10px;
+  margin-left: 50px;
+}
