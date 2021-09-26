@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Display = (props) => {
-  console.log(props.member);
+  // console.log(props.member);
   const { name, img, address, subscription, contact } = props.member;
   // Font Awesome
   const checkIcon = <FontAwesomeIcon icon={faArrowCircleRight} />;

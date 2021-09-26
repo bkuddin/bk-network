@@ -24,6 +24,7 @@ const Member = () => {
         <div className="members">
           {membersData.map((member) => (
             <Display
+              key={member.id}
               member={member}
               handleAddToCart={handleAddToCart}
             ></Display>

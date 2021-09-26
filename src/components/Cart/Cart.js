@@ -44,6 +44,7 @@ const Cart = (props) => {
         </span>
         : ${total}{" "}
       </p>
+
       <p>
         <span
           style={{
@@ -57,7 +58,7 @@ const Cart = (props) => {
           {" "}
           {memberIcon} Member :
         </span>
-        <br /> <br /> {name + "  "}
+        <br /> <br /> {name}
       </p>
     </div>
   );
