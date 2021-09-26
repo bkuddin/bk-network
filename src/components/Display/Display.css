@@ -1,0 +1,27 @@
+.display-travel {
+  text-align: center;
+  box-shadow: -4px 22px 39px -6px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: -4px 22px 39px -6px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: -4px 22px 39px -6px rgba(0, 0, 0, 0.37);
+  padding: 5%;
+  border-radius: 20px;
+}
+
+.travel-card {
+  line-height: 0.5;
+}
+
+img {
+  width: 250px;
+}
+
+.btn-regular {
+  background-color: lightslategrey;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}

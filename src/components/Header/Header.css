@@ -1,39 +1,43 @@
 .header {
   display: flex;
   justify-content: space-around;
-  background-color: #e21f25;
+  background-color: #ffffff;
+  box-shadow: 3px 14px 39px -6px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 3px 14px 39px -6px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 3px 14px 39px -6px rgba(0, 0, 0, 0.26);
 }
 
 .header .logo {
+  margin-top: 20px;
   font-size: 2rem;
   font-weight: 600;
-  color: white;
+  color: #e21f25;
 }
 
 .header nav {
-  line-height: 50px;
+  line-height: 90px;
 }
 
 .header nav a {
   text-decoration: none;
   margin-right: 30px;
-  color: white;
+  color: #e21f25;
   padding: 8px;
   text-transform: uppercase;
 }
 
 .header nav a:hover {
-  background-color: white;
-  color: #e21f25;
+  background-color: #e21f25;
+  color: #fdfdfd;
 }
 
 .header-text {
-  margin-top: 3rem;
+  padding: 7rem;
   text-align: center;
   line-height: 0;
+  background-color: lightslategrey;
 }
 .slogan {
-  font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -45,5 +49,7 @@
 .package {
   font-size: 3rem;
   padding-top: 2rem;
-  color: #e21f25;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }

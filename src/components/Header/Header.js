@@ -13,7 +13,7 @@ const Header = () => {
           <a href="/contact">Contact</a>
         </nav>
       </div>
-      <div className="header-text ">
+      <div className="header-text">
         <p className="slogan">
           Taking a International Holidy? Make it Worry Free with
         </p>
