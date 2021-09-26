@@ -40,7 +40,7 @@ const Cart = (props) => {
             color: "rgb(50, 68, 85)",
           }}
         >
-          Total Price
+          Total Fund
         </span>
         : ${total}{" "}
       </p>

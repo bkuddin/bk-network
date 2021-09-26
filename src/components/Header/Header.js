@@ -25,7 +25,7 @@ const Header = () => {
           className="budget"
         >
           <span style={{ boxShadow: "0px 22px 20px -4px rgba(0,0,0,0.28)" }}>
-            Nonprofit Budget, Total: $ 5000
+            Nonprofit Budget, Total: $ 150000
           </span>
         </h3>
       </div>
