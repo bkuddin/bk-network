@@ -1,13 +1,16 @@
 import "./Display.css";
 import React from "react";
+
+// Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowCircleRight, faHotel } from "@fortawesome/free-solid-svg-icons";
 
 const Display = (props) => {
   console.log(props.travel);
   const { location, img, price, hotel, room } = props.travel;
-
+  // Font Awesome
   const bookIcon = <FontAwesomeIcon icon={faArrowCircleRight} />;
+
   return (
     <div className="display-travel">
       <div className="travel-card">
@@ -37,7 +40,11 @@ const Display = (props) => {
           </h4>
         </p>
         <h5 style={{ color: "red" }}>
-          Book in advance from ${price} per adult{" "}
+          Book in advance from{" "}
+          <span style={{ fontSize: "20px", color: "rgb(59, 80, 100)" }}>
+            ${price}
+          </span>{" "}
+          per adult{" "}
         </h5>
         <hr />
         <button

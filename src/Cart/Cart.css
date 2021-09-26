@@ -1,0 +1,6 @@
+.cart {
+  padding: 6%;
+  box-shadow: -2px 8px 18px -9px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: -2px 8px 18px -9px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: -2px 8px 18px -9px rgba(0, 0, 0, 0.64);
+}

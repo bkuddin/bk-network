@@ -1,6 +1,9 @@
 import "./Cart.css";
-
 import React from "react";
+
+// Font Awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHotel } from "@fortawesome/free-solid-svg-icons";
 
 const Cart = (props) => {
   // Destructuring
@@ -14,12 +17,47 @@ const Cart = (props) => {
   //  Reduce for Hotel Name
   const hotel = cart.reduce((previous, travel) => previous + travel.hotel, []);
 
-  return (
-    <div>
-      <h2>Booking: {props.cart.length} </h2>
-      <p>Total Price: {total} </p>
+  // Font Awesome
+  const hotelIcon = <FontAwesomeIcon icon={faHotel} />;
 
-      <li>Hotel: {hotel + ""} </li>
+  return (
+    <div className="cart">
+      <h2
+        style={{
+          backgroundColor: "lightslategrey",
+          padding: "4%",
+          color: "white",
+        }}
+      >
+        <span style={{ color: "rgb(50, 68, 85)" }}>Booking:</span>{" "}
+        {props.cart.length}{" "}
+      </h2>
+      <hr />
+      <p style={{ fontSize: "25px" }}>
+        <span
+          style={{
+            fontWeight: "800",
+            color: "rgb(50, 68, 85)",
+          }}
+        >
+          Total Price
+        </span>
+        : {total}{" "}
+      </p>
+      <p>
+        <span
+          style={{
+            backgroundColor: "lightslategrey",
+            color: "white",
+            padding: "2%",
+            fontSize: "20px",
+          }}
+        >
+          {" "}
+          {hotelIcon} Hotel:
+        </span>
+        <br /> <br /> {hotel + "  "}
+      </p>
     </div>
   );
 };
