@@ -1,6 +1,6 @@
-## Tours and Travels
+## BK Network
 
-I'm attempting to create a website listing the finest hotels for reserving before to trip.
+I'm attempting to create a Network, Called BK Network (BKN) is a international organization consisting of 8 members educators, scientists, extension specialists, industry researchers, administrators, producers, and college students who are committed to advancing the BK Network.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

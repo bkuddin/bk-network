@@ -3,22 +3,22 @@ import React from "react";
 
 // Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHotel } from "@fortawesome/free-solid-svg-icons";
+import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
 
 const Cart = (props) => {
   // Destructuring
   const { cart } = props;
-  // For Loop
+  // For Loop for Total
   let total = 0;
-  for (const travel of cart) {
-    total = total + travel.price;
+  for (const member of cart) {
+    total = total + member.subscription;
   }
 
-  //  Reduce for Hotel Name
-  const hotel = cart.reduce((previous, travel) => previous + travel.hotel, []);
+  //  Reduce for Member Name
+  const name = cart.reduce((previous, member) => previous + member.name, []);
 
   // Font Awesome
-  const hotelIcon = <FontAwesomeIcon icon={faHotel} />;
+  const memberIcon = <FontAwesomeIcon icon={faUserFriends} />;
 
   return (
     <div className="cart">
@@ -29,7 +29,7 @@ const Cart = (props) => {
           color: "white",
         }}
       >
-        <span style={{ color: "rgb(50, 68, 85)" }}>Booking:</span>{" "}
+        <span style={{ color: "rgb(50, 68, 85)" }}>Check:</span>{" "}
         {props.cart.length}{" "}
       </h2>
       <hr />
@@ -42,7 +42,7 @@ const Cart = (props) => {
         >
           Total Price
         </span>
-        : {total}{" "}
+        : ${total}{" "}
       </p>
       <p>
         <span
@@ -51,12 +51,13 @@ const Cart = (props) => {
             color: "white",
             padding: "2%",
             fontSize: "20px",
+            borderRadius: "5px",
           }}
         >
           {" "}
-          {hotelIcon} Hotel:
+          {memberIcon} Member :
         </span>
-        <br /> <br /> {hotel + "  "}
+        <br /> <br /> {name + "  "}
       </p>
     </div>
   );

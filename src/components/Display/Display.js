@@ -6,17 +6,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Display = (props) => {
-  console.log(props.travel);
-  const { location, img, price, hotel, room } = props.travel;
+  console.log(props.member);
+  const { name, img, address, subscription, contact } = props.member;
   // Font Awesome
-  const bookIcon = <FontAwesomeIcon icon={faArrowCircleRight} />;
+  const checkIcon = <FontAwesomeIcon icon={faArrowCircleRight} />;
 
   return (
-    <div className="display-travel">
-      <div className="travel-card">
+    <div className="display-member">
+      <div className="member-card">
         <img src={img} alt="" />
-        <h2>{hotel}</h2>
-        <p>Room: {room}</p>
+        <h2>{name}</h2>
+        <p>Contact: {contact}</p>
         <hr />
         <p
           style={{
@@ -25,7 +25,7 @@ const Display = (props) => {
             alignItems: "center",
           }}
         >
-          Location:{" "}
+          address:{" "}
           <h4
             style={{
               marginLeft: "10px",
@@ -36,22 +36,22 @@ const Display = (props) => {
             }}
           >
             {" "}
-            {location}{" "}
+            {address}{" "}
           </h4>
         </p>
         <h5 style={{ color: "red" }}>
-          Book in advance from{" "}
+          Must pay monthly{" "}
           <span style={{ fontSize: "20px", color: "rgb(59, 80, 100)" }}>
-            ${price}
+            ${subscription}
           </span>{" "}
-          per adult{" "}
+          per associate{" "}
         </h5>
         <hr />
         <button
-          onClick={() => props.handleAddToCart(props.travel)}
+          onClick={() => props.handleAddToCart(props.member)}
           className="btn-regular"
         >
-          {bookIcon} Book Now
+          {checkIcon} Check
         </button>
       </div>
     </div>

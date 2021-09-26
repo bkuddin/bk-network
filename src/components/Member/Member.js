@@ -1,30 +1,30 @@
-import "./Travel.css";
+import "./Member.css";
 
 import React, { useEffect, useState } from "react";
 import Display from "../Display/Display";
-import Cart from "../../Cart/Cart";
+import Cart from "../Cart/Cart";
 
-const Travel = () => {
-  const [travelData, setTravelData] = useState([]);
+const Member = () => {
+  const [membersData, setmembersData] = useState([]);
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    fetch("./tours.json")
+    fetch("./association.json")
       .then((res) => res.json())
-      .then((data) => setTravelData(data));
+      .then((data) => setmembersData(data));
   }, []);
 
-  const handleAddToCart = (travel) => {
-    const newCart = [...cart, travel];
+  const handleAddToCart = (member) => {
+    const newCart = [...cart, member];
     setCart(newCart);
   };
   return (
     <div>
-      <div className="travel-container">
-        <div className="hotel-container">
-          {travelData.map((travel) => (
+      <div className="member-container">
+        <div className="members">
+          {membersData.map((member) => (
             <Display
-              travel={travel}
+              member={member}
               handleAddToCart={handleAddToCart}
             ></Display>
           ))}
@@ -37,4 +37,4 @@ const Travel = () => {
   );
 };
 
-export default Travel;
+export default Member;

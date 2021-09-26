@@ -1,4 +1,4 @@
-.display-travel {
+.display-member {
   text-align: center;
   box-shadow: -4px 22px 39px -6px rgba(0, 0, 0, 0.37);
   -webkit-box-shadow: -4px 22px 39px -6px rgba(0, 0, 0, 0.37);
@@ -7,12 +7,14 @@
   border-radius: 20px;
 }
 
-.travel-card {
+.member-card {
   line-height: 0.5;
 }
 
-.travel-card img {
+.member-card img {
   width: 250px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .btn-regular {
