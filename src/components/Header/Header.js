@@ -18,7 +18,18 @@ const Header = () => {
           Taking a International Holidy? Make it Worry Free with
         </p>
         <h1 className="title">BK TOUR & TRAVELS</h1>
-        <h3 className="package">Packages Total: 1200 $</h3>
+        <h3
+          style={{
+            backgroundColor: "rgb(50, 68, 85)",
+            width: "60%",
+            margin: "0 auto",
+          }}
+          className="package"
+        >
+          <span style={{ boxShadow: "0px 22px 20px -4px rgba(0,0,0,0.28)" }}>
+            Packages Total: 1200 $
+          </span>
+        </h3>
       </div>
     </div>
   );
