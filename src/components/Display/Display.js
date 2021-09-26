@@ -40,7 +40,12 @@ const Display = (props) => {
           Book in advance from ${price} per adult{" "}
         </h5>
         <hr />
-        <button className="btn-regular">{bookIcon} Book Now</button>
+        <button
+          onClick={() => props.handleAddToCart(props.travel)}
+          className="btn-regular"
+        >
+          {bookIcon} Book Now
+        </button>
       </div>
     </div>
   );
