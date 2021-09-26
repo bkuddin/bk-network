@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Tours and Travels
+
+I'm attempting to create a website listing the finest hotels for reserving before to trip.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

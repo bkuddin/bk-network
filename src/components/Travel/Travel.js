@@ -2,6 +2,7 @@ import "./Travel.css";
 
 import React, { useEffect, useState } from "react";
 import Display from "../Display/Display";
+import Cart from "../../Cart/Cart";
 
 const Travel = () => {
   const [travelData, setTravelData] = useState([]);
@@ -29,7 +30,7 @@ const Travel = () => {
           ))}
         </div>
         <div className="cart-container">
-          <h2>Booking: {cart.length} </h2>
+          <Cart cart={cart}></Cart>
         </div>
       </div>
     </div>
