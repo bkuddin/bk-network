@@ -41,9 +41,3 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### Connect with me:
-
-[<img align="left" alt="Bk Uddin" width="22px" src="https://app.netlify.com/teams/bkuddin/overview" />][website]
-
-[<img align="left" alt="bkUddin | Instagram" width="22px" src="https://www.facebook.com/bakhtiar.uddins/" />][facebook]
