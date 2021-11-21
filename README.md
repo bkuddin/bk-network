@@ -2,6 +2,8 @@
 
 I'm attempting to create a Network, Called BK Network (BKN) is a international organization consisting of 8 members educators, scientists, extension specialists, industry researchers, administrators, producers, and college students who are committed to advancing the BK Network.
 
+https://bk-network.netlify.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Project notes
